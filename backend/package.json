@@ -1,0 +1,32 @@
+{
+  "name": "ptz-control-backend",
+  "version": "1.0.0",
+  "description": "PTZカメラ制御用APIプロキシ",
+  "main": "index.ts",
+  "scripts": {
+    "dev": "tsx watch index.ts",
+    "stream": "tsx watch stream-server.ts",
+    "dev:all": "concurrently \"npm run dev\" \"npm run stream\"",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "hono": "^4.0.0",
+    "@hono/node-server": "^1.8.0",
+    "digest-fetch": "^2.0.0",
+    "dotenv": "^16.0.0",
+    "cors": "^2.8.5",
+    "ws": "^8.16.0",
+    "fluent-ffmpeg": "^2.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/cors": "^2.8.17",
+    "@types/ws": "^8.5.0",
+    "@types/fluent-ffmpeg": "^2.1.21",
+    "concurrently": "^8.2.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  },
+  "type": "module"
+}
