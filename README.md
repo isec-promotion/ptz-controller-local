@@ -55,8 +55,8 @@ ptz-controller/
 ### 1. リポジトリのクローン
 
 ```bash
-git clone https://github.com/your-username/ptz-controller.git
-cd ptz-controller
+git clone https://github.com/isec-promotion/ptz-controller-local.git
+cd ptz-controller-local
 ```
 
 ### 2. 環境設定
@@ -230,4 +230,4 @@ MIT License
 
 ## 作者
 
-- GitHub: [@your-username](https://github.com/your-username)
+- GitHub: [@isec-promotion](https://github.com/isec-promotion/)
